@@ -1,0 +1,13 @@
+spring:
+  application:
+    name:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://gymplan-db.c7a8oqw4wzse.eu-north-1.rds.amazonaws.com:5432/gymdb
+    # url: jdbc:postgresql://localhost:5432/backenddb
+    username: postgres
+    password: postgres
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
