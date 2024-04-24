@@ -13,7 +13,11 @@ public class WebConfig {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/**").allowedMethods("GET", "POST", "PUT", "PATCH", "DELETE").allowedOrigins("http://ec2-3-250-189-231.eu-west-1.compute.amazonaws.com");
+                registry
+                        .addMapping("/**")
+                        .allowedMethods("GET", "POST", "PUT", "PATCH", "DELETE")
+                        .allowedOrigins("http://localhost:5173")
+                        .allowedOrigins("http://ec2-3-250-189-231.eu-west-1.compute.amazonaws.com");
             }
         };
     }
