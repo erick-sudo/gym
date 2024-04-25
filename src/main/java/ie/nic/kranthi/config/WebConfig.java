@@ -17,7 +17,8 @@ public class WebConfig {
                         .addMapping("/**")
                         .allowedMethods("GET", "POST", "PUT", "PATCH", "DELETE")
                         .allowedOrigins("http://localhost:5173")
-                        .allowedOrigins("http://ec2-3-250-189-231.eu-west-1.compute.amazonaws.com");
+                        .allowedOrigins("http://ec2-3-250-189-231.eu-west-1.compute.amazonaws.com")
+                        .allowedOrigins("http://ec2-51-20-250-151.eu-north-1.compute.amazonaws.com");
             }
         };
     }
