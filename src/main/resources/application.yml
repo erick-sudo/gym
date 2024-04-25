@@ -3,12 +3,12 @@ spring:
     name:
   datasource:
     driver-class-name: org.postgresql.Driver
-    # url: jdbc:postgresql://gymplan-db.c7a8oqw4wzse.eu-north-1.rds.amazonaws.com:5432/gymdb
-    # username: postgres
-    # password: postgres
-    url: jdbc:postgresql://localhost:5432/db_postgres
-    username: user_postgres
-    password: password_postgres
+    url: jdbc:postgresql://gymplan-db.c7a8oqw4wzse.eu-north-1.rds.amazonaws.com:5432/gymdb
+    username: postgres
+    password: postgres
+    # url: jdbc:postgresql://localhost:5432/db_postgres
+    # username: user_postgres
+    # password: password_postgres
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
